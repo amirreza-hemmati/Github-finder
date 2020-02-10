@@ -11,7 +11,8 @@ const ButtonTheme = () => {
         setState(preveState => ({
             ...preveState,
             theme: !preveState.theme
-        }))
+        }));
+		localStorage.setItem("theme", !theme);
     }
 
     return (
