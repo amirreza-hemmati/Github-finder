@@ -1,0 +1,23 @@
+.snackbar{
+    padding: 10px 15px;
+    position: fixed;
+    left: -100%;
+    top: 85%;
+    z-index: 50;
+    color: white;
+    border-radius: 5px;
+    font-size: 22px;
+    transition: 0.7s;
+}
+
+.show-snackbar{
+    left: 5%;
+}
+
+.success{
+    background-color: rgb(33, 192, 104);
+}
+
+.error{
+    background-color: #f44336;
+}

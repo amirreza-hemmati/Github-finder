@@ -1,0 +1,71 @@
+.user {
+    margin: 0 auto !important;
+    padding: 20px 0;
+
+    .m-0 {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .p-0 {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .InformationUser {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .bio {
+        text-align: center;
+        color: $text-secondary;
+        font-size: 18px;
+        font-weight: bold;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .linkGoPage {
+        background-color: rgb(22, 95, 179);
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+
+        a {
+            color: white;
+            width: 100%;
+        }
+    }
+
+    .repos {
+        margin-top: 50px;
+
+        @include responsive("md") {
+            margin-top: 0;
+        }
+
+        .list-group {
+
+
+            .list-group-item {
+                // display: block;
+                margin: 0;
+
+                @include responsive("md") {
+                    margin: 0 15px;
+                }
+
+                a{
+                    color: #007bff;
+                    transition: 0.3s;
+                    
+                    &:hover{
+                        color: #004da0;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

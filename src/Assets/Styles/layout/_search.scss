@@ -1,0 +1,30 @@
+.search{
+    width: 100%;
+    padding: 30px 0;
+    background-color: $bg-secondary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    input{
+        background-color: $bg-white;
+        max-width: 600px;
+        border-radius: 0 !important;
+        margin: 10px 0;
+    }
+
+    button{
+        color: $text-white;
+        border: 1px solid $bg-white;
+        height: 52px !important;
+        margin: 10px 0;
+        border-radius: 0 !important;
+
+
+        &:hover{
+            color: $text-black;
+            background-color: $bg-white !important;
+        }
+    }
+}

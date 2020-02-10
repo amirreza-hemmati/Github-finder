@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.Header{
+	background-color: #24292e;
+	color: $text-white;
+	padding: 16px;
+	font-size: 24px;
+	display: flex;
+	justify-content: space-around;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 80;
+	// width: 100%;
+	
+	.header__brand {
+		transition: 0.4s;
+		color: $text-white;
+	
+		&:hover{
+			color: #c3c0c0;
+		}
+	}
+}

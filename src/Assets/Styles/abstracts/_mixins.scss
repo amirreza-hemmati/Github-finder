@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+@mixin responsive($device) {
+
+    @if($device == "xs") { 
+        @media (min-width: 0){ @content }
+    }
+    
+    @if ($device == "sm"){
+        @media (min-width: 575.98px) { @content }
+    }
+
+    @if ($device == "md"){
+        @media (min-width: 768px) { @content }
+    }
+
+    @if ($device == "lg"){
+        @media (min-width: 992px){ @content }
+    }
+
+    @if ($device == "xl"){
+        @media (min-width: 993px) { @content }
+    }
+
+}
